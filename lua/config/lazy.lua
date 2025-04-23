@@ -22,6 +22,13 @@ require("lazy").setup({
     { import = "plugins" },
     { "williamboman/mason.nvim" },
 
+    -- Add rustaceanvim for Rust development
+    {
+      "mrcjkb/rustaceanvim",
+      version = "^6", -- Recommended
+      lazy = false, -- This plugin is already lazy
+    },
+
     -- Add Python venv selection
     {
       "linux-cultist/venv-selector.nvim",
