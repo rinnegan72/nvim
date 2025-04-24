@@ -1,16 +1,20 @@
 return {
   "kawre/leetcode.nvim",
-  build = ":TSUpdate html", -- Only needed if you have nvim-treesitter
+  build = function()
+    -- Only run TSUpdate if treesitter is available
+    if package.loaded["nvim-treesitter"] then
+      vim.cmd("TSUpdate html")
+    end
+  end,
   dependencies = {
     "nvim-telescope/telescope.nvim",
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
+    "nvim-treesitter/nvim-treesitter", -- Explicitly add treesitter as dependency
   },
   opts = {
-    -- Your configuration options go here
-    -- Example configuration (check the plugin docs for available options):
-    -- lang = "python", -- Default language
+    -- your configuration here
   },
-  -- Optional: Only load when you want to use it
-  -- cmd = "Leet",
+  -- Optional: lazy load when using Leetcode commands
+  cmd = { "Leet", "LeetConsole", "LeetSubmit" },
 }
