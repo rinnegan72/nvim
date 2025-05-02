@@ -93,6 +93,7 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
+        rust_analyzer = false,
         -- tsserver will be automatically installed with mason and loaded with lspconfig
         tsserver = {},
       },
