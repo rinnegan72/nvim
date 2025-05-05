@@ -44,7 +44,7 @@ require("lazy").setup({
                 -- Faster compilation checks (disable if too slow)
                 checkOnSave = {
                   command = "clippy", -- Or set to "check" for faster runs
-                  extraArgs = { "--all-targets" },
+                  extraArgs = {},
                 },
                 -- Optimized inlay hints (enable only what you need)
                 inlayHints = {
