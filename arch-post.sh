@@ -31,7 +31,6 @@ sudo pacman -S --noconfirm \
   waybar \
   wofi \
   dunst \
-  kitty \
   thunar \
   grim \
   slurp \
