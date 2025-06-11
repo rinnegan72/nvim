@@ -20,6 +20,7 @@ return {
     },
   },
 
+  { "akinsho/toggleterm.nvim", version = "*", config = true },
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -116,7 +117,6 @@ return {
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
   { import = "lazyvim.plugins.extras.lang.typescript" },
 
-  -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
