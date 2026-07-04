@@ -4,7 +4,7 @@
 return {
   -- Core LSP tools with additional packages
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "stylua",
@@ -14,7 +14,7 @@ return {
       },
     },
   },
-  { "williamboman/mason-lspconfig.nvim" },
+  { "mason-org/mason-lspconfig.nvim" },
 
   -- LSP configuration with Python support
   {
